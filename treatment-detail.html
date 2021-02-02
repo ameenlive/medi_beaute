@@ -10,7 +10,7 @@
 	<meta name="description" content="Medi Beaute">
 
 	<!-- SITE TITLE -->
-	<title>Medi Beaute - Cart</title>
+	<title>Medi Beaute - Treatment Detail</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 	<!-- Animation CSS -->
@@ -80,7 +80,7 @@
 					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 						<ul class="navbar-nav">
-							<li><a class="nav-link nav_item active" href="#">About Us</a></li>
+							<li class=""><a class="nav-link nav_item active" href="#">About Us</a></li>
 							<li><a class="nav-link nav_item" href="treatment-list.html">Treatments</a></li>
 							<li><a class="nav-link nav_item" href="product-list.html">Products</a></li>
 							<li><a class="nav-link nav_item" href="#">Media</a></li>
@@ -141,10 +141,16 @@
 		<div class="container">
 			<!-- STRART CONTAINER -->
 			<div class="row align-items-center">
-				<div class="col">
-					<div class="page-title text-center">
-						<h1>My Cart</h1>
+				<div class="col-md-6">
+					<div class="page-title">
+						<h1>All Treatments</h1>
 					</div>
+				</div>
+				<div class="col-md-6">
+					<ol class="breadcrumb justify-content-md-end">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active"><a href="#">Treatments</a></li>
+					</ol>
 				</div>
 			</div>
 		</div><!-- END CONTAINER-->
@@ -154,317 +160,25 @@
 	<!-- START MAIN CONTENT -->
 	<div class="main_content">
 
-		<!-- START SECTION  -->
+		<!-- START SECTION SHOP -->
 		<div class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<div class="table-responsive">
-							<table class="table">
-								<tbody>
-									<tr>
-										<td class="product-remove" data-title="Remove"><a href="#"><i class="ti-close"></i></a></td>
-										<td class="product-thumbnail"><a href="#"><img src="assets/images/product_img1.jpg"
-													alt="product1"></a></td>
-										<td data-title="Product">
-											<a href="#" class="product-name">Blue Dress For Woman</a>
-											<small>Quantity:</small>
-											<span class="quantity">
-												<input type="button" value="-" class="minus">
-												<input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-												<input type="button" value="+" class="plus">
-											</span>
-										</td>
-										<td class="product-price" data-title="Price">RM45.00</td>
-									</tr>
-									<tr>
-										<td class="product-remove" data-title="Remove"><a href="#"><i class="ti-close"></i></a></td>
-										<td class="product-thumbnail"><a href="#"><img src="assets/images/product_img2.jpg"
-													alt="product1"></a></td>
-										<td data-title="Product">
-											<a href="#" class="product-name">Blue Dress For Woman</a>
-											<small>Quantity:</small>
-											<span class="quantity">
-												<input type="button" value="-" class="minus">
-												<input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-												<input type="button" value="+" class="plus">
-											</span>
-										</td>
-										<td class="product-price" data-title="Price">RM45.00</td>
-									</tr>
-									<tr>
-										<td class="product-remove" data-title="Remove"><a href="#"><i class="ti-close"></i></a></td>
-										<td class="product-thumbnail"><a href="#"><img src="assets/images/product_img4.jpg"
-													alt="product1"></a></td>
-										<td data-title="Product">
-											<a href="#" class="product-name">Blue Dress For Woman</a>
-											<small>Quantity:</small>
-											<span class="quantity">
-												<input type="button" value="-" class="minus">
-												<input type="text" name="quantity" value="2" title="Qty" class="qty" size="4">
-												<input type="button" value="+" class="plus">
-											</span>
-										</td>
-										<td class="product-price" data-title="Price">RM45.00</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+			<div class="container treatment-list">
+				<div class="title mb-5 text-center">
+					<h2 class="display-block" data-animation="slideInLeft" data-animation-delay="1s">Begin Your Journey</h2>
+				</div>
+				<div class="row ">
+					<div class="col-md-5">
+						<img class="img-fluid mx-auto" src="assets/images/treatment-detail-img1.png" alt="">
 					</div>
-
-					<div class="col-md-4">
-						<div class="price-side">
-							<div class="price-widget mb-4">
-								<label for="">Apply promo code</label>
-								<div class="coupon field_form input-group">
-									<input type="text" value="" class="form-control form-control-sm rounded-0"
-										placeholder="Enter Coupon Code..">
-									<div class="input-group-append">
-										<button class="btn btn-fill-out btn-sm rounded-0" type="submit">Apply</button>
-									</div>
-								</div>
-							</div>
-							<div class="price-widget">
-								<div class="table-responsive">
-									<table class="table">
-										<tbody>
-											<tr>
-												<td class="cart_total_label">Subtotal</td>
-												<td class="cart_total_amount">RM34.00</td>
-											</tr>
-											<tr>
-												<td class="cart_total_label">Shipping</td>
-												<td class="cart_total_amount">RM34.00</td>
-											</tr>
-											<tr>
-												<td class="cart_total_label">Total INCL.TAX(0%)</td>
-												<td class="cart_total_amount">RM10.00</td>
-											</tr>
-											<tr>
-												<td class="cart_total_label"><strong>Grand Total</strong></td>
-												<td class="cart_total_amount"><strong>RM45.00</strong></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="text-center">
-									<a href="#" class="btn btn-fill-out btn-fill-out-sec rounded-0 pl-5 pr-5">Proceed To CheckOut</a>
-								</div>
-							</div>
-						</div>
+					<div class="col-md-7">
+						<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- END SECTION  -->
+		<!-- END SECTION SHOP -->
 	</div>
-	<!-- END MAIN CONTENT -->
-
-
-
-	<!-- START SECTION -->
-	<div class="section small_pt small_pb">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="title mb-3 text-center">
-						<p data-animation="slideInLeft" data-animation-delay="0.5s">Related Products</p>
-						<h2 data-animation="slideInLeft" data-animation-delay="1s">You May Also Like</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="product_slider carousel_slider owl-carousel owl-theme nav_style1" data-loop="true"
-						data-dots="false" data-nav="true" data-margin="20"
-						data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "1199":{"items": "4"}}'>
-						<div class="item">
-							<div class="product">
-								<div class="product_img">
-									<a href="product-detail.html">
-										<img src="assets/images/product_img1.jpg" alt="product_img1">
-									</a>
-									<div class="product_action_box">
-										<ul class="list_none pr_action_btn">
-											<li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-
-											<li><a href="quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-											<li><a href="#"><i class="icon-heart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product_info">
-									<h6 class="product_title"><a href="product-detail.html">Blue Dress For Woman</a></h6>
-									<div class="product_price">
-										<span class="price">RM45.00</span>
-										<del>RM55.25</del>
-										<div class="on_sale">
-											<span>35% Off</span>
-										</div>
-									</div>
-									<div class="rating_wrap">
-										<div class="rating">
-											<div class="product_rate" style="width:80%"></div>
-										</div>
-									</div>
-									<div class="pr_desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-											varius nunc id varius nunc.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="product_img">
-									<a href="product-detail.html">
-										<img src="assets/images/product_img2.jpg" alt="product_img2">
-									</a>
-									<div class="product_action_box">
-										<ul class="list_none pr_action_btn">
-											<li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-
-											<li><a href="quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-											<li><a href="#"><i class="icon-heart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product_info">
-									<h6 class="product_title"><a href="product-detail.html">Lether Gray Tuxedo</a></h6>
-									<div class="product_price">
-										<span class="price">RM55.00</span>
-										<del>RM95.00</del>
-										<div class="on_sale">
-											<span>25% Off</span>
-										</div>
-									</div>
-									<div class="rating_wrap">
-										<div class="rating">
-											<div class="product_rate" style="width:68%"></div>
-										</div>
-										<span class="rating_num">(15)</span>
-									</div>
-									<div class="pr_desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-											varius nunc id varius nunc.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="product">
-								<span class="pr_flash">New</span>
-								<div class="product_img">
-									<a href="product-detail.html">
-										<img src="assets/images/product_img3.jpg" alt="product_img3">
-									</a>
-									<div class="product_action_box">
-										<ul class="list_none pr_action_btn">
-											<li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-
-											<li><a href="quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-											<li><a href="#"><i class="icon-heart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product_info">
-									<h6 class="product_title"><a href="product-detail.html">woman full sliv dress</a></h6>
-									<div class="product_price">
-										<span class="price">RM68.00</span>
-										<del>RM99.00</del>
-									</div>
-									<div class="rating_wrap">
-										<div class="rating">
-											<div class="product_rate" style="width:87%"></div>
-										</div>
-										<span class="rating_num">(25)</span>
-									</div>
-									<div class="pr_desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-											varius nunc id varius nunc.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="product_img">
-									<a href="product-detail.html">
-										<img src="assets/images/product_img4.jpg" alt="product_img4">
-									</a>
-									<div class="product_action_box">
-										<ul class="list_none pr_action_btn">
-											<li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-
-											<li><a href="quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-											<li><a href="#"><i class="icon-heart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product_info">
-									<h6 class="product_title"><a href="product-detail.html">light blue Shirt</a></h6>
-									<div class="product_price">
-										<span class="price">RM69.00</span>
-										<del>RM89.00</del>
-										<div class="on_sale">
-											<span>20% Off</span>
-										</div>
-									</div>
-									<div class="rating_wrap">
-										<div class="rating">
-											<div class="product_rate" style="width:70%"></div>
-										</div>
-										<span class="rating_num">(22)</span>
-									</div>
-									<div class="pr_desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-											varius nunc id varius nunc.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="product_img">
-									<a href="product-detail.html">
-										<img src="assets/images/product_img5.jpg" alt="product_img5">
-									</a>
-									<div class="product_action_box">
-										<ul class="list_none pr_action_btn">
-											<li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-
-											<li><a href="quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-											<li><a href="#"><i class="icon-heart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="product_info">
-									<h6 class="product_title"><a href="product-detail.html">blue dress for woman</a></h6>
-									<div class="product_price">
-										<span class="price">RM45.00</span>
-										<del>RM55.25</del>
-										<div class="on_sale">
-											<span>35% Off</span>
-										</div>
-									</div>
-									<div class="rating_wrap">
-										<div class="rating">
-											<div class="product_rate" style="width:80%"></div>
-										</div>
-									</div>
-									<div class="pr_desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-											varius nunc id varius nunc.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END SECTION  -->
 
 	<!-- START SECTION SUBSCRIBE NEWSLETTER -->
 	<div class="section small_pt small_pb subscribe-bg" style="background-image: url(assets//images/stay-in-touch.jpg)">
@@ -490,7 +204,7 @@
 	<!-- START SECTION SUBSCRIBE NEWSLETTER -->
 
 	<!-- START FOOTER -->
-	<footer>
+	<footer class="">
 		<div class="footer_top">
 			<div class="container">
 				<div class="row">

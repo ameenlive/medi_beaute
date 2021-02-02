@@ -339,8 +339,8 @@ button:focus {
 }
 
 .btn-border-fill {
-	border: 1px solid #016C55;
-	color: #016C55;
+	border: 1px solid #292b2c;
+	color: #292b2c;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -353,7 +353,7 @@ button:focus {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #016C55;
+	background-color: #292b2c;
 	z-index: -1;
 	transition: all 0.3s ease-in-out;
 	width: 0;
@@ -6461,8 +6461,11 @@ footer .widget_title {
 
 .product-image {
 	position: relative;
+	background-color: #f7f9f6	;
 }
-
+.btn{
+	border-radius: 0;
+}
 .pr_detail .pr_desc {
 	display: inline-block;
 }
@@ -6697,6 +6700,11 @@ footer .widget_title {
 	margin-bottom: 10px;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+}
+
+.product_img_box img{
+	margin: 0 auto;
 }
 
 .product_img_zoom {
@@ -9011,6 +9019,9 @@ body.switch-open {
 }
 .table tr:last-child td{
 	border-top: 1px solid #96beb5;
+}
+.treatment-list .card-body{
+	padding: 20px 0;
 }
 @media only screen and (max-width: 480px) {
 	.demo_list {
