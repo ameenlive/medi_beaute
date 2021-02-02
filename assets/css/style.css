@@ -5005,7 +5005,8 @@ footer .widget_title {
 }
 
 .page-title-mini .page-title h1 {
-	font-size: 28px;
+	font-size: 48px;
+	font-family: 'golden_plains_regular';
 }
 
 .page-title-mini .breadcrumb li {
@@ -6103,7 +6104,17 @@ footer .widget_title {
 	margin-left: 5px;
 	color: #919191;
 }
-
+.product-price {
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: right;
+}
+.product-name{
+	font-weight: 500;
+	font-size: 1.02rem;
+	margin-bottom: 10px;
+	display: block;
+}
 .on_sale {
 	display: inline-block;
 	color: #388e3c;
@@ -6488,7 +6499,6 @@ footer .widget_title {
 	background-color: #eee;
 	display: block;
 	float: left;
-	border-radius: 50px;
 	cursor: pointer;
 	border: 0;
 	padding: 0;
@@ -6497,7 +6507,6 @@ footer .widget_title {
 	line-height: 36px;
 	text-align: center;
 	font-size: 20px;
-	margin: 4px;
 }
 
 .quantity .minus {
@@ -6507,12 +6516,11 @@ footer .widget_title {
 .quantity .qty {
 	float: left;
 	width: 55px;
-	height: 36px;
+	height: 34px;
 	border: 1px solid #ddd;
 	background-color: transparent;
 	text-align: center;
 	padding: 0;
-	margin: 3px;
 }
 
 .cart_extra {
@@ -8975,12 +8983,34 @@ body.switch-open {
 .display-block{
 	display: inline-block;
 }
-.subscribe-bg{
+.subscribe-bg, .breadcrumb-bg{
 	position: relative;
 	background: transparent;
 	overflow: hidden;
 	z-index: 1;
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-underline{
+	text-decoration: underline
+}
+.text-theme{
+	color: #016C55
+}
+.price-widget{
+	background-color: #f0f0f0;
+	padding: 20px;
+	text-transform: uppercase;
+}
+.table td{
+	border-top: 0;
+}
+.table tr:first-child td{
+	border-bottom: 1px solid #96beb5;
+}
+.table tr:last-child td{
+	border-top: 1px solid #96beb5;
 }
 @media only screen and (max-width: 480px) {
 	.demo_list {
