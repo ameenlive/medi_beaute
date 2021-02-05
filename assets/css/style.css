@@ -9030,7 +9030,12 @@ body.switch-open {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.title-bg{
+	position: relative;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .text-underline{
 	text-decoration: underline
 }
