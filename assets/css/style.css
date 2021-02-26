@@ -451,7 +451,6 @@ button:focus {
 	background-color: #333;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-
 .btn-line-fill {
 	border: 1px solid #333;
 	overflow: hidden;
@@ -4511,11 +4510,12 @@ h6.blog_title {
 }
 
 .newsletter_form input{
-	box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 18%);
 	display: inline-block;
-	width: 70%;
+	width: 55%;
 }
-
+.newsletter_form p{
+	margin-bottom: 5px;
+}
 .newsletter_form .form-control:focus{
 	box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 18%);
 }
@@ -4683,7 +4683,7 @@ footer {
 }
 
 .footer_top {
-	padding: 100px 0 70px;
+	padding: 50px 0 50px;
 }
 
 .footer_logo {
@@ -4701,13 +4701,13 @@ footer .widget {
 footer .widget_title {
 	text-transform: capitalize;
 	margin-top: 10px;
-	margin-bottom: 25px;
-	font-size: 18px;
+	margin-bottom: 6px;
+	font-size: 13px;
 }
 
 .widget_links li {
 	list-style: none;
-	padding-bottom: 10px;
+	padding-bottom: 6px;
 }
 
 .widget_links li:last-child {
@@ -4715,7 +4715,7 @@ footer .widget_title {
 }
 
 .widget_links li a {
-	font-size: 14px;
+	font-size: 13px;
 	color: #687188;
 }
 
@@ -5245,7 +5245,6 @@ footer .widget_title {
 	top: 0;
 	bottom: 0;
 	background-color: #016C55;
-	z-index: ;
 	transition: all 0.5s ease-in-out;
 	-moz-transform: scale(0);
 	-webkit-transform: scale(0);
@@ -7159,7 +7158,7 @@ footer .widget_title {
 }
 
 .product-remove a i:hover {
-	background-color: #F00;
+	background-color: #a06a61;
 	color: #fff;
 }
 
@@ -9039,8 +9038,17 @@ body.switch-open {
 .text-underline{
 	text-decoration: underline
 }
+.font-normal{
+	font-weight: normal !important;
+}
 .text-theme{
 	color: #016C55
+}
+.text-theme-sec{
+	color: #A06A61
+}
+.text-bg{
+	background-color: #016C55
 }
 .price-widget{
 	background-color: #f0f0f0;
@@ -9091,6 +9099,8 @@ body.switch-open {
 #journey li img{
 	height: 202px;
 	padding-bottom: 90px;
+	position: relative;
+	left: -10px;
 }
 #journey li p{
 	line-height: 20px;
@@ -9219,6 +9229,245 @@ body.switch-open {
 	width: 150px;
 }
 .btn-treatment i{ margin-left: 5px;}
+.flip{
+	transform: rotateY(180deg);
+}
+.bottom_mid .icon{
+	color: #016C55;
+	font-size: 18px;
+	position: relative;
+	top: 3px;
+	margin-bottom: 0;
+}
+.number-title{
+	color: #016C55;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.number-title span{
+	font-weight: bold;
+	background-color: #016C55;
+	padding: 5px;
+	border-radius: 100%;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	justify-content: center;
+	margin-right: 10px;
+	color: white;
+}
+.custom-group label{
+	text-align: center;
+}
+.custom-group .form-control{
+	text-align: center;
+	border-color: #bfbfbf;
+	border-radius: 0;
+}
+.custom-selects {
+  position: relative;
+}
+
+.custom-selects select {
+  display: none;
+}
+
+.select-selected {
+  background-color: white;
+  border: 1px solid #bfbfbf;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #056c55 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #056c55 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 5px 6px rgb(0 0 0 / 38%);
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #056c55;
+  color: white;
+}
+
+.label-center label{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: black;
+}
+.label-center label{
+	display: block;
+}
+.sec_pad{
+	padding: 50px 0;
+}
+
+/*datepicker*/
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+	background: #056c55;
+	color: #ffffff;
+}
+.form-control.picker__input{
+	background-color: white;
+	text-align: left;
+}
+.picker__footer{
+	display: none;
+}
+.picker__wrap {
+	margin: 0;
+}
+.picker__box{
+	padding: 0;
+}
+.picker__holder{
+	overflow-y: inherit;
+}
+.picker__header {
+	margin-top: 0;
+	padding: 10px;
+	background: #056c55;
+}
+.picker__nav--prev, .picker__nav--next {
+	top: 4px;
+}
+.picker__nav--prev{
+	left: 0;
+}
+.picker__nav--next {
+	right: 0;
+}
+.picker__nav--prev:before{
+	border-right-color: white;
+}
+.picker__nav--next:before {
+	border-left-color: white;
+}
+.picker__month, .picker__year{
+	color: white;
+	font-style: normal;
+}
+.picker__day.picker__day--infocus{
+	border: 1px solid #808080;
+	margin: 1px;
+}
+.picker__table {
+	width: calc(100% - 2em);
+	margin: 1em;
+}
+.picker__weekday {
+	font-size: 1em;
+	padding-bottom: .7em;
+	color: #000000;
+	font-weight: 600;
+}
+.picker__nav--prev:hover, .picker__nav--next:hover{
+	background-color: transparent;
+}
+.picker__day--highlighted:hover, .picker--focused .picker__day--highlighted {
+	cursor: pointer;
+	color: #ffffff;
+	background: #0a6c54;
+	border-color: #0a6c54;
+}
+.picker__day--infocus:hover {
+	background: #d0fff2;
+}
+.picker__day--outfocus:hover {
+	background: transparent;
+}
+.picker__day--today:before {
+	border-top: 0.5em solid #0a6c54;
+}
+.btn-check {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+.time-btn{
+	display: flex;
+  flex-wrap: wrap;
+}
+.time-btn .btn{
+	display: inline-block;
+	min-width: 145px;
+	margin-bottom: 30px;
+}
+.time-btn > div{
+	flex: 0 0 33.333333%;
+}
+.btn-outline-primary {
+	color: #056c55;
+	border-color: #056c55;
+}
+.btn-outline-primary:hover {
+	background-color: #056c55;
+	border-color: #056c55;
+}
+.table-noborder td, .table-noborder th, .table-noborder tr:first-child td, .table-noborder thead th{
+	border: 0 !important;
+}
+.text-background{
+	margin-bottom: 30px;
+	position: relative;
+	height: 100px;
+}
+.text-background div{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -40px 0px;
+	height: 90px;
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 100px;
+}
+.pt-100{
+	padding-top: 100px;
+}
+.log .form-control{
+	border-radius: 0;
+}
+.signup .text-background div{
+	background-position: 0px;
+	height: 110px;
+}
 @media only screen and (max-width: 480px) {
 	.demo_list {
 		right: -270px;
@@ -9229,6 +9478,11 @@ body.switch-open {
 		-moz-transform: translateX(-270px);
 		-webkit-transform: translateX(-270px);
 		transform: translateX(-270px);
+	}
+	.text-background div {
+    background-position: -290px 0px;
+    height: 90px;
+    top: 100px;
 	}
 }
 @media only screen and (min-width: 768px) {
