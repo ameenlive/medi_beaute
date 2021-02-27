@@ -101,6 +101,7 @@ h6 {
 }
 .title p{
 	margin-bottom: 0;
+	font-size: 16px;
 }
 p {
 	line-height: 28px;
@@ -4703,6 +4704,8 @@ footer .widget_title {
 	margin-top: 10px;
 	margin-bottom: 6px;
 	font-size: 13px;
+	color: black;
+	font-weight: bold;
 }
 
 .widget_links li {
@@ -4716,7 +4719,7 @@ footer .widget_title {
 
 .widget_links li a {
 	font-size: 13px;
-	color: #687188;
+	color: #000000;
 }
 
 .contact_info>li {
@@ -4868,7 +4871,9 @@ footer .widget_title {
 	border: 0;
 	display: block;
 }
-
+.map{
+	box-shadow: 2px 4px 8px 1px rgb(51 51 51 / 43%);
+}
 .contact_map {
 	height: 400px;
 }
@@ -5418,10 +5423,11 @@ footer .widget_title {
 	background-color: transparent;
 	padding: 0px;
 	margin: 0;
+	border-bottom-color: #006837;
 }
 
 .accordion .card-header a {
-	padding: 15px 40px 15px 15px;
+	padding: 15px 15px 15px 40px;
 	display: block;
 	line-height: normal;
 }
@@ -5450,23 +5456,15 @@ footer .widget_title {
 }
 
 .accordion.accordion_style1 .card-header a {
-	padding-left: 0;
 	padding-top: 0;
 	font-weight: 600;
 }
 
-.accordion_style1 .card-header a::after {
-	content: "\f208";
-	font-family: "Ionicons";
-	font-size: 16px;
-	font-weight: normal;
-	position: absolute;
-	right: 15px;
-	top: 0px;
-}
+.accordion_style1 .card-header a::after {position: absolute;content: "";left: 0;width: 0;height: 0;border: 9px solid transparent;border-color: transparent transparent #056c55 transparent;top: -2px;}
 
 .accordion_style1 .card-header a[aria-expanded="false"]::after {
-	content: "\f217";
+	border-color: #056c55 transparent transparent transparent;
+	top: 7px;
 }
 
 .accordion_style2 .card-header {
@@ -5559,7 +5557,9 @@ footer .widget_title {
 .accordion_style4>.card .card-header {
 	margin-bottom: -1px;
 }
-
+.accordion li{
+	margin-bottom: 25px;
+}
 /*===================================*
   18.END ACCORDION STYLE
 *===================================*/
@@ -9042,13 +9042,13 @@ body.switch-open {
 	font-weight: normal !important;
 }
 .text-theme{
-	color: #016C55
+	color: #006837
 }
 .text-theme-sec{
 	color: #A06A61
 }
 .text-bg{
-	background-color: #016C55
+	background-color: #006837
 }
 .price-widget{
 	background-color: #f0f0f0;
@@ -9262,7 +9262,7 @@ body.switch-open {
 }
 .custom-group .form-control{
 	text-align: center;
-	border-color: #bfbfbf;
+	border-color: #222222;
 	border-radius: 0;
 }
 .custom-selects {
@@ -9275,18 +9275,24 @@ body.switch-open {
 
 .select-selected {
   background-color: white;
-  border: 1px solid #bfbfbf;
+  border: 1px solid #222222;
+  height: 50px;
+  height: 50px;
+  padding: 10px 15px;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
-  right: 10px;
+  top: 20px;
+  right: 15px;
   width: 0;
   height: 0;
-  border: 6px solid transparent;
+  border: 9px solid transparent;
   border-color: #056c55 transparent transparent transparent;
 }
 
@@ -9298,9 +9304,9 @@ body.switch-open {
 
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
-  padding: 8px 16px;
   cursor: pointer;
   user-select: none;
+  padding: 11px 15px;
 }
 
 /*style items (options):*/
@@ -9467,6 +9473,13 @@ body.switch-open {
 .signup .text-background div{
 	background-position: 0px;
 	height: 110px;
+}
+.form-control{
+	border-radius: 0;
+	border-color: #222222;
+}
+.bg-grey{
+	background-color: #ebebe9;
 }
 @media only screen and (max-width: 480px) {
 	.demo_list {
