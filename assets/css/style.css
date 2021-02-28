@@ -9497,6 +9497,13 @@ body.switch-open {
     height: 90px;
     top: 100px;
 	}
+	.navbar-nav{
+		text-align: center;
+	}
+	.navbar-nav li.d-flex{
+    margin: 0 auto;
+    margin-bottom: 20px;
+	}
 }
 @media only screen and (min-width: 768px) {
 	.banner_content_padding{
