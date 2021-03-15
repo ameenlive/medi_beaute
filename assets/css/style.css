@@ -139,7 +139,9 @@ ol {
 	margin: 0;
 	padding: 0;
 }
-
+.dot{
+	font-family: Arial, Helvetica, sans-serif;
+}
 fieldset {
 	border: 0 none;
 	margin: 0 auto;
@@ -8702,8 +8704,15 @@ blockquote p:last-child {
 	text-align: left;
 	padding: 12px 20px;
 	border-radius: 0;
-	border-bottom: 1px solid #efefef;
 	color: #2b2f4c;
+	background-color: #f2f2f4;
+}
+.dashboard_menu .nav-tabs li.nav-item div {
+	padding: 20px;
+	color: #2b2f4c;
+	background-color: #f2f2f4;
+	font-weight: bolder;
+	font-size: 16px;
 }
 
 .dashboard_menu .nav-tabs li.nav-item a.active {
@@ -9001,7 +9010,10 @@ body.switch-open {
 	width: 180px;
 	max-width: 180px;
 }
-
+.page-title h1 {
+	font-size: 58px;
+	font-family: 'golden_plains_regular';
+}
 .nav-link.btn {
 	padding: 5px 10px !important;
 }
@@ -9481,6 +9493,43 @@ body.switch-open {
 .bg-grey{
 	background-color: #ebebe9;
 }
+.about-content{
+	background-color: #f4ece1;
+	padding: 20px 50px;
+}
+.hide{
+	display: none;
+}
+.form-control[readonly]{
+	background-color: transparent;
+	border-color: transparent;
+}
+.myaccount tfoot.addbg{
+	text-align: right;
+	background-color: #056c55;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+}
+.myaccount tbody .quantity {
+	width: 130px;
+}
+.form-group{
+	position: relative;
+}
+.dashboard_content .btn i{
+	font-size: 16px;
+}
+.my-account-title{
+	position: relative;
+	border-bottom: 1px solid #056c55;
+	padding-top: 65px;
+}
+
+.my-account-title img{
+	position: absolute;
+  top: -30px;
+}
 @media only screen and (max-width: 480px) {
 	.demo_list {
 		right: -270px;
@@ -9503,6 +9552,10 @@ body.switch-open {
 	.navbar-nav li.d-flex{
     margin: 0 auto;
     margin-bottom: 20px;
+	}
+
+	.about-content{
+		padding: 20px;
 	}
 }
 @media only screen and (min-width: 768px) {
