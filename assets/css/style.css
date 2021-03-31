@@ -7555,6 +7555,7 @@ select option {
 	height: auto;
 	line-height: normal;
 	margin-right: 10px;
+	display: none;
 }
 
 .widget_categories li:last-child,
@@ -9354,6 +9355,7 @@ body.switch-open {
 }
 .sec_pad{
 	padding: 50px 0;
+	position: relative;
 }
 
 /*datepicker*/
@@ -9500,7 +9502,7 @@ body.switch-open {
 .hide{
 	display: none;
 }
-.form-control[readonly]{
+.form-control[readonly]:not(.cal){
 	background-color: transparent;
 	border-color: transparent;
 }
@@ -9530,6 +9532,21 @@ body.switch-open {
 	position: absolute;
   top: -30px;
 }
+.treatment-detail .text-justify{
+	line-height: 24px;
+}
+.img-ele-res{
+	position: absolute;
+	right: 70px;
+	margin: auto 0;
+	top: 100px;
+	bottom: auto;
+}
+.img-ele-res img {
+	max-width: unset;
+	width: 140px;
+}
+
 @media only screen and (max-width: 480px) {
 	.demo_list {
 		right: -270px;
