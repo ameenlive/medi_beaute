@@ -9546,7 +9546,6 @@ body.switch-open {
 	max-width: unset;
 	width: 140px;
 }
-
 @media only screen and (max-width: 480px) {
 	.demo_list {
 		right: -270px;
@@ -9578,5 +9577,11 @@ body.switch-open {
 @media only screen and (min-width: 768px) {
 	.banner_content_padding{
 		padding-left: 110px;
+	}
+	.about-img{
+		position: absolute;
+		width: 500px;
+		left: -350px;
+		top: 20%;
 	}
 }
