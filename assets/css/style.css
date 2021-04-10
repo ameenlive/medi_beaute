@@ -74,8 +74,8 @@ body {
 
 body {
 	background: #ffffff none repeat scroll 0 0;
-	color: #000000;
-	font-family: 'century_gothicregular', sans-serif;
+	color: #000000 !important;
+	font-family: 'century_gothicregular', sans-serif !important;
 	font-size: 14px;
 }
 
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #292b2c;
+	color: #292b2c !important;
 	font-family: 'century_gothicbold';
 }
 .title-font{
@@ -109,7 +109,7 @@ p {
 }
 
 a {
-	color: #292b2c;
+	color: #292b2c !important;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all .3s ease-in-out;
@@ -281,7 +281,7 @@ button:focus {
 .btn-fill-out {
 	background-color: transparent;
 	border: 1px solid #016C55;
-	color: #fff;
+	color: white !important;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -386,11 +386,13 @@ button:focus {
 
 .btn-border-fill:hover:before,
 .btn-border-fill:hover:after {
-	width: 50%;
+	width: 100%;
 }
 
 .btn-border-fill:hover {
 	color: #fff !important;
+	background-color: #fff !important;
+	border-color: #282b2c !important;
 }
 
 .btn-white {
@@ -738,9 +740,9 @@ button:focus {
 }
 
 .scrollup {
-	background-color: #171717;
+	background-color: #056c55;
 	bottom: 20px;
-	color: #ffffff;
+	color: #ffffff !important;
 	font-size: 24px;
 	height: 40px;
 	line-height: 40px;
@@ -2362,6 +2364,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 
 .main_menu_uppercase .navbar-nav>li>.nav-link {
 	text-transform: uppercase;
+	outline:none;
 }
 
 .main_menu_weight_100 .navbar .navbar-nav>li>.nav-link {
@@ -4515,6 +4518,7 @@ h6.blog_title {
 .newsletter_form input{
 	display: inline-block;
 	width: 55%;
+	background-color: #fff !important;
 }
 .newsletter_form p{
 	margin-bottom: 5px;
@@ -5971,7 +5975,7 @@ footer .widget_title {
 
 .shorting_icon.active {
 	background-color: #016C55;
-	color: #fff;
+	color: #fff !important;
 	border-color: #016C55;
 }
 
@@ -6229,8 +6233,14 @@ footer .widget_title {
 }
 
 .pr_action_btn {
-	display: table;
-	margin: 0 auto;
+	display: flex;
+	margin: 0 auto !important;
+	align-items: center;
+	justify-content: center;
+}
+.tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before {
+    font-size: 26px !important;
+    padding: 6px !important;
 }
 
 .product_img {
@@ -6333,7 +6343,7 @@ footer .widget_title {
 
 .pr_action_btn li a:hover {
 	background-color: #016C55;
-	color: #fff;
+	color: #fff !important;
 }
 
 .product .product_title,
@@ -9205,10 +9215,11 @@ body.switch-open {
 	font-size: 20px;
 }
 .treatment-form .form-control{
-	border: 0;
+	border: 0 !important;
 	border-radius: 0;
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0 !important;
 	padding: 10px 0;
+	box-shadow: none;
 }
 .breadcrumb-title h1{
 	color: #016C55;
@@ -9546,6 +9557,7 @@ body.switch-open {
 	max-width: unset;
 	width: 140px;
 }
+
 @media only screen and (max-width: 480px) {
 	.demo_list {
 		right: -270px;
@@ -9578,10 +9590,35 @@ body.switch-open {
 	.banner_content_padding{
 		padding-left: 110px;
 	}
-	.about-img{
-		position: absolute;
-		width: 500px;
-		left: -350px;
-		top: 20%;
+}
+
+
+/* Custom fixes */
+ol, ul {
+    margin: 0 !important;
+    padding: 0;
+}
+.btn-fill-out::before, .btn-fill-out::after {
+    width: 100%;
+}
+
+.woocommerce .col-1, .col-2{ max-width:none;}
+.woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row,.woocommerce form .form-row {
+display: block;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+max-width: unset;
+}
+@media (min-width:768px) {
+	.col-full {
+	    max-width: 100% !important;
+	    padding: 0 !important;
 	}
+}
+.tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before{
+	margin-top: 8px !important;
+}
+.storefront-breadcrumb, .tinv-header {
+	display: none;
 }

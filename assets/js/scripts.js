@@ -586,30 +586,62 @@ PAGE JS
 	/*===================================*
     16.MAP JS
     *===================================*/	
-	if ($("#map").length > 0){
-		google.maps.event.addDomListener(window, 'load', init);
-	}
+	// if ($("#map").length > 0){
+	// 	google.maps.event.addDomListener(window, 'load', init);
+	// }
 	
-	var map_selector = $('#map');
-	function init() {
+	// var map_selector = $('#map');
+	// function init() {
 		
-		var mapOptions = {
-			zoom: map_selector.data("zoom"),
-			mapTypeControl: false,
-			center: new google.maps.LatLng(map_selector.data("latitude"), map_selector.data("longitude")), // New York
-		  };
-		var mapElement = document.getElementById('map');
-		var map = new google.maps.Map(mapElement, mapOptions);
-		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(map_selector.data("latitude"), map_selector.data("longitude")),
-			map: map,
-			icon: map_selector.data("icon"),
+	// 	var mapOptions = {
+	// 		zoom: map_selector.data("zoom"),
+	// 		mapTypeControl: false,
+	// 		center: new google.maps.LatLng(map_selector.data("latitude"), map_selector.data("longitude")), // New York
+	// 	  };
+	// 	var mapElement = document.getElementById('map');
+	// 	var map = new google.maps.Map(mapElement, mapOptions);
+	// 	var marker = new google.maps.Marker({
+	// 		position: new google.maps.LatLng(map_selector.data("latitude"), map_selector.data("longitude")),
+	// 		map: map,
+	// 		icon: map_selector.data("icon"),
 			
-			title: map_selector.data("title"),
-		});
-		marker.setAnimation(google.maps.Animation.BOUNCE);
-	}	
+	// 		title: map_selector.data("title"),
+	// 	});
+	// 	marker.setAnimation(google.maps.Animation.BOUNCE);
+	// }	
 
+	$(document).on('ready', function(){
+		// Set default map
+		 setMap(['Kuala Lumpur', 3.054240, 101.788530]);
+
+		 // Set lat-lan by onclick
+		 $(".setMap").click(function(e) {
+				e.preventDefault();
+			 var getQuar = $(this).attr("data-map");
+			 setMap(getQuar.split(','));
+		 });
+	});
+
+	function setMap([city, lat, lag]){
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 10,
+			center: new google.maps.LatLng(lat, lag),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+		var infowindow = new google.maps.InfoWindow();
+		var marker, i;
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(lat, lag),
+			map: map
+		});
+
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			return function() {
+				infowindow.setContent(city);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
+	}
 	
 	/*===================================*
     17. COUNTDOWN JS

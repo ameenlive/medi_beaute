@@ -213,9 +213,7 @@
 					<div class="row justify-content-center">
 						<div class="col-md-5">
 							<img class="mb-5" src="./assets/images/ouroutlets.svg" alt="">
-							<iframe class="map w-100" height="450" id="gmap_canvas"
-								src="https://maps.google.com/maps?q=Medi%20Beaute%20Mahkota%20Cheras&t=&z=13&ie=UTF8&iwloc=&output=embed"
-								frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<div class="map w-100" id="map" style="height: 400px;"></div>
 							<p class="mt-4">
 								<strong class="text-theme">Working Hours</strong> <br /><br />
 								Mon – Fri : 10.30am – 8.30pm <br />
@@ -235,17 +233,21 @@
 										<div class="card-body">
 											<ul>
 												<li>
-													<p><strong class="text-theme">Medi Beaute Mahkota Cheras</strong></p>
-													<p>5-G, Jalan Mahkota Residence 2, <br />
-														Bandar Mahkota Cheras, <br />
-														43200 Kuala Lumpur</p>
-													<p>Tel: <a class="text-theme" href="tel:0122261849">012-2261 849</a></p>
+													<a href="#?" class="setMap" data-map="'Kuala Lumpur', 3.054240, 101.788530">
+														<p><strong class="text-theme">Medi Beaute Mahkota Cheras</strong></p>
+														<p>5-G, Jalan Mahkota Residence 2, <br />
+															Bandar Mahkota Cheras, <br />
+															43200 Kuala Lumpur</p>
+														<p>Tel: <a class="text-theme" href="tel:0122261849">012-2261 849</a></p>
+													</a>
 												</li>
 												<li>
-													<p><strong class="text-theme">Medi Beaute Wangsa Walk Mall</strong></p>
-													<p>Lot G-01A, Wangsa Walk Mall,<br />
-														53300, Kuala Lumpur</p>
-													<p>Tel: <a class="text-theme" href="tel:01114383587">011-1438 3587</a></p>
+													<a href="#?" class="setMap" data-map="'Kuala Lumpur', 47.013710, 9.462420">
+														<p><strong class="text-theme">Medi Beaute Wangsa Walk Mall</strong></p>
+														<p>Lot G-01A, Wangsa Walk Mall,<br />
+															53300, Kuala Lumpur</p>
+														<p>Tel: <a class="text-theme" href="tel:01114383587">011-1438 3587</a></p>
+													</a>
 												</li>
 												<li>
 													<p><strong class="text-theme">Medi Beaute Da Men Shopping Mall</strong></p>
@@ -707,7 +709,10 @@
 		<script src="assets/js/slick.min.js"></script>
 		<!-- elevatezoom js -->
 		<script src="assets/js/jquery.elevatezoom.js"></script>
-		
+
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 		<!-- scripts js -->
 		<script src="assets/js/scripts.js"></script>
 
