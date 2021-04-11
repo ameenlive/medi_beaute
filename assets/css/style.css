@@ -286,6 +286,9 @@ button:focus {
 	overflow: hidden;
 	z-index: 1;
 }
+input[type=text]:focus{
+	background-color: white i !important;
+}
 .btn-fill-out-sec {
 	border: 1px solid #A06A61;
 }
@@ -6246,6 +6249,11 @@ footer .widget_title {
 .product_img {
 	position: relative;
 	overflow: hidden;
+
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	background-color: #f4f7f3;
 }
 
 .product_img::before {
@@ -9220,9 +9228,16 @@ body.switch-open {
 	border-bottom: 1px solid #c0c0c0 !important;
 	padding: 10px 0;
 	box-shadow: none;
+	background-color: white;
+}
+.btn-primary {
+	color: #fff !important;
+}
+.btn-outline-dark:hover{
+	color: #fff !important;
 }
 .breadcrumb-title h1{
-	color: #016C55;
+	color: #016C55 !important;
 	font-size: 68px;
 	font-family: 'golden_plains_regular';
 	font-weight: 500;
@@ -9377,6 +9392,9 @@ body.switch-open {
 .form-control.picker__input{
 	background-color: white;
 	text-align: left;
+	border-bottom: 1px solid #ced4da;
+	box-shadow: none;
+	cursor: pointer;
 }
 .picker__footer{
 	display: none;
@@ -9385,30 +9403,32 @@ body.switch-open {
 	margin: 0;
 }
 .picker__box{
-	padding: 0;
+	padding: 0 !important;
 }
 .picker__holder{
 	overflow-y: inherit;
+	width: 320px !important;
 }
 .picker__header {
-	margin-top: 0;
+	margin-top: 0 !important;
 	padding: 10px;
 	background: #056c55;
 }
 .picker__nav--prev, .picker__nav--next {
-	top: 4px;
+	top: 4px !important;
+	color: white !important;
 }
 .picker__nav--prev{
-	left: 0;
+	left: 0 !important;
 }
 .picker__nav--next {
-	right: 0;
+	right: 0 !important;
 }
 .picker__nav--prev:before{
-	border-right-color: white;
+	border-right-color: white !important;
 }
 .picker__nav--next:before {
-	border-left-color: white;
+	border-left-color: white !important;
 }
 .picker__month, .picker__year{
 	color: white;
@@ -9419,14 +9439,16 @@ body.switch-open {
 	margin: 1px;
 }
 .picker__table {
-	width: calc(100% - 2em);
-	margin: 1em;
+	width: calc(100% - 2em) !important;
+	margin: 1em !important;
 }
 .picker__weekday {
 	font-size: 1em;
-	padding-bottom: .7em;
+	padding: 0 !important;
 	color: #000000;
 	font-weight: 600;
+	text-align: center;
+	padding-bottom: .7em !important;
 }
 .picker__nav--prev:hover, .picker__nav--next:hover{
 	background-color: transparent;
@@ -9621,4 +9643,10 @@ max-width: unset;
 }
 .storefront-breadcrumb, .tinv-header {
 	display: none;
+}
+.picker__day{
+	text-align: center;
+}
+.picker__table{
+	margin: 0;
 }
