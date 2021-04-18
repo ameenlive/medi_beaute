@@ -8736,7 +8736,7 @@ blockquote p:last-child {
 
 .dashboard_menu .nav-tabs li.nav-item a.active {
 	background-color: #016C55;
-	color: #fff;
+	color: #fff !important;
 }
 
 .dashboard_menu .nav-tabs li.nav-item a i {
@@ -9649,4 +9649,41 @@ max-width: unset;
 }
 .picker__table{
 	margin: 0;
+}
+.hentry .entry-title{
+    color: #056c55 !important;
+    margin-top: 30px;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation{
+	float: left;
+	margin-right: 4.347826087%;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul{
+    background-color: #f2f2f4;
+}
+
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li{
+    border-color: #f2f2f4 !important;
+    padding: 10px 15px;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li a{
+    padding: 0 !important;
+}
+
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li.is-active{
+    background-color: #056c55;
+}
+.hentry .entry-content .woocommerce-MyAccount-navigation ul li.is-active a{
+    color: white !important;
+    padding: 0 !important;
+}
+.hentry .entry-content .woocommerce-MyAccount-content{
+	margin-right: 0;
+}
+.input-text{
+	outline: none;
+	color: #000000;
+}
+a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus{
+	outline: none;
 }
