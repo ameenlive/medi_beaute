@@ -9725,3 +9725,19 @@ table.cart td, table.tinvwl-table-manage-list td {
 .tinvwl-table-manage-list .product-thumbnail img {
 	max-width: 60px;
 }
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+    background-color: #0a6c54 !important;
+}
+#ship-to-different-address .woocommerce-form__input-checkbox{
+	left: 0
+}
+table.woocommerce-checkout-review-order-table .product-name{
+	width: 100% !important;
+    font-size: 14px;
+}
+table.woocommerce-checkout-review-order-table  th{
+	background-color: #0a6c54 !important;
+	color: white;
+	padding: 10px;
+	margin-bottom: 0
+}
