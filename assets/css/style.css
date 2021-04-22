@@ -9687,3 +9687,41 @@ max-width: unset;
 a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus{
 	outline: none;
 }
+
+.woocommerce-shipping-fields{
+	padding-top: 10px
+}
+#ship-to-different-address label span{
+	padding-left: 20px
+}
+.showcoupon{
+	color: white !important;
+}
+#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: #0a6c54 !important;
+}
+table.cart td.actions input, .tinvwl-table-manage-list table td.actions input{
+	outline: none !important;
+}
+table.cart th, table.tinvwl-table-manage-list th {
+	padding: 10px !important;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-align: left
+}
+table.cart td, table.tinvwl-table-manage-list td {
+	padding: 10px !important;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 0;
+	vertical-align: middle;
+	display: table-cell;
+}
+.cart_item a.remove:before, .product-remove button{
+	color: red !important;
+}
+
+.tinvwl-table-manage-list .product-thumbnail img {
+	max-width: 60px;
+}
